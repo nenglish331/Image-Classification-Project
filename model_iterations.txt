@@ -1,0 +1,271 @@
+1st iteration:
+- Target size: (64, 64)
+- Number of layers: 8
+    (3 Convolutional layers, 3 Pooling layers, 1 Flatten layer, 1 Dense layer)
+- Number of filters: 
+    32 (first Conv2D layer), 
+    64 (second Conv2D layer), 
+    128 (third Conv2D layer)
+- Filter size: (3, 3) for all Conv2D layers
+- Stride: Not explicitly mentioned, defaults to (1, 1) for all Conv2D layers
+- Padding: Not explicitly mentioned, 
+    defaults to 'valid' (no padding) for all Conv2D layers
+- Pooling size: (2, 2) for all MaxPooling2D layers
+- Activation Functions: 
+    'relu' for Conv2D and Dense layers, 
+    'softmax' for the final Dense layer
+- Learning Rate: Defaults to the learning rate of 'adam' optimizer (0.001)
+- Batch Size: 32
+- Number of Epochs: 10
+- Dropout Rate: Not used in this model
+- Preprocessing: 
+    - rescale=1./255,
+Validation Accuracy: 0.9045936465263367
+Test Accuracy: 0.9545454545454546
+
+2nd iteration:
+- Target size: (64, 64)
+- Number of layers: 8 
+    (3 Convolutional layers, 3 Pooling layers, 1 Flatten layer, 1 Dense layer)
+- Number of filters: 
+    32 (first Conv2D layer), 
+    64 (second Conv2D layer), 
+    128 (third Conv2D layer)
+- Filter size: (3, 3) for all Conv2D layers
+- Stride: Defaults to (1, 1) for all Conv2D layers
+- Padding: Not explicitly mentioned, 
+    defaults to 'valid' (no padding) for all Conv2D layers
+- Pooling size: (1, 1) for all MaxPooling2D layers
+- Activation Functions: 
+    'relu' for Conv2D and Dense layers, 
+    'softmax' for the final Dense layer
+- Learning Rate: defaults to the learning rate of 'adam' optimizer (0.001)
+- Batch Size: 32
+- Number of Epochs: 10
+- Dropout Rate: 0.25
+- Preprocessing: 
+    - rescale=1./255,
+    - rotation_range=20,
+    - width_shift_range=0.2,
+    - height_shift_range=0.2,
+    - shear_range=0.2,
+    - zoom_range=0.2,
+    - horizontal_flip=True
+Validation Accuracy: 0.6431095406360424
+Test Accuracy: 0.6534090909090909
+
+3rd iteration:
+- Target size: (64, 64)
+- Number of layers: 8
+    (3 Convolutional layers, 3 Pooling layers, 1 Flatten layer, 1 Dense layer)
+- Number of filters: 
+    32 (first Conv2D layer), 
+    64 (second Conv2D layer), 
+    128 (third Conv2D layer)
+- Filter size: (3, 3) for all Conv2D layers
+- Stride: Not explicitly mentioned, defaults to (1, 1) for all Conv2D layers
+- Padding: Not explicitly mentioned, 
+    defaults to 'valid' (no padding) for all Conv2D layers
+- Pooling size: (2, 2) for all MaxPooling2D layers
+- Activation Functions: 
+    'relu' for Conv2D and Dense layers, 
+    'softmax' for the final Dense layer
+- Learning Rate: Defaults to the learning rate of 'adam' optimizer (0.001)
+- Batch Size: 32
+- Number of Epochs: 50
+- Dropout Rate: Not used in this model
+- Preprocessing: 
+    - rescale=1./255,
+Validation Accuracy: 0.8904593639575972
+Test Accuracy: 0.9375
+
+4th iteration:
+- Target size: (64, 64)
+- Number of layers: 10
+    (4 Convolutional layers, 4 Pooling layers, 1 Flatten layer, 1 Dense layer)
+- Number of filters: 
+    32 (first Conv2D layer), 
+    64 (second Conv2D layer), 
+    128 (third Conv2D layer), 
+    256 (fourth Conv2D layer)
+- Filter size: (3, 3) for all Conv2D layers
+- Stride: Not explicitly mentioned, defaults to (1, 1) for all Conv2D layers
+- Padding: Not explicitly mentioned, 
+    defaults to 'valid' (no padding) for all Conv2D layers
+- Pooling size: (2, 2) for all MaxPooling2D layers
+- Activation Functions: 
+    'relu' for Conv2D and Dense layers, 
+    'softmax' for the final Dense layer
+- Learning Rate: Defaults to the learning rate of 'adam' optimizer (0.001)
+- Batch Size: 32
+- Number of Epochs: 50
+- Dropout Rate: Not used in this model
+- Preprocessing: 
+    - rescale=1./255,
+Validation Accuracy: 0.8904593639575972
+Test Accuracy: 0.9375
+
+5th iteration:
+- Target size: (64, 64)
+- Number of layers: 12 
+    (5 Convolutional layers, 5 Pooling layers, 1 Flatten layer, 1 Dense layer)
+- Number of filters: 
+    32 (first Conv2D layer), 
+    64 (second Conv2D layer), 
+    128 (third Conv2D layer), 
+    256 (fourth Conv2D layer)
+- Filter size: (3, 3) for all Conv2D layers
+- Stride: Not explicitly mentioned, defaults to (1, 1) for all Conv2D layers
+- Padding: Not explicitly mentioned, 
+    defaults to 'valid' (no padding) for all Conv2D layers
+- Pooling size: (2, 2) for all MaxPooling2D layers
+- Activation Functions: 
+    'sigmoid' for Conv2D and Dense layers, 
+    'softmax' for the final Dense layer
+- Learning Rate: Defaults to the learning rate of 'adam' optimizer (0.001)
+- Batch Size: 16
+- Number of Epochs: 25
+- Dropout Rate: Not used in this model
+- Preprocessing: 
+    - rescale=1./255,
+Validation Accuracy: 0.18021201413427562
+Test Accuracy: 0.17613636363636365
+
+6th iteration:
+- Target size: (64, 64)
+- Number of layers: 11 
+    (5 Convolutional layers, 5 Pooling layers, 1 Flatten layer, 1 Dense layer)
+- Number of filters: 
+    32 (first Conv2D layer), 
+    64 (second Conv2D layer), 
+    128 (third Conv2D layer), 
+    256 (fourth Conv2D layer), 
+    512 (fifth Conv2D layer)
+- Filter size: 
+    (3, 3) for first 3 Conv2D layers,
+    (5, 5) for the last 2 Conv2D layers
+- Stride: Not explicitly mentioned, defaults to (1, 1) for all Conv2D layers
+- Padding: 
+    'same' for all Conv2D layers
+- Pooling size: (2, 2) for all MaxPooling2D layers
+- Activation Functions: 
+    'elu' for Conv2D layers,
+    'relu' for Dense layer,
+    'softmax' for the final Dense layer
+- Learning Rate: Defaults to the learning rate of 'adam' optimizer (0.001)
+- Batch Size: 16
+- Number of Epochs: 15
+- Dropout Rate: Not used in this model
+- Preprocessing: 
+    - rescale=1./255,
+Validation Accuracy: 0.9257950530035336
+Test Accuracy: 0.9715909090909091
+
+7th iteration:
+- Target size: (64, 64)
+- Number of layers: 10
+    (4 Convolutional layers, 4 Pooling layers, 1 Flatten layer, 1 Dense layer)
+- Number of filters: 
+    32 (first Conv2D layer), 
+    64 (second Conv2D layer), 
+    128 (third Conv2D layer), 
+    256 (fourth Conv2D layer)
+- Filter size: 
+    (3, 3) for first 3 Conv2D layers,
+    (5, 5) for the last Conv2D layers
+- Stride: Not explicitly mentioned, defaults to (1, 1) for all Conv2D layers
+- Padding: 
+    'same' for all Conv2D layers
+- Pooling size: (2, 2) for all MaxPooling2D layers
+- Activation Functions: 
+    'elu' for Dense and Conv2D layers, 
+    'softmax' for the final Dense layer
+- Learning Rate: Defaults to the learning rate of 'adam' optimizer (0.001)
+- Batch Size: 8
+- Number of Epochs: 15
+- Dropout Rate: Not used in this model
+- Preprocessing: 
+    - rescale=1./255,
+Validation Accuracy: 0.9222614840989399
+Test Accuracy: 0.9886363636363636
+
+8th iteration:
+- Target size: (64, 64)
+- Number of layers: 8
+    (3 Convolutional layers, 3 Pooling layers, 1 Flatten layer, 1 Dense layer)
+- Number of filters: 
+    32 (first Conv2D layer), 
+    64 (second Conv2D layer), 
+    128 (third Conv2D layer)
+- Filter size: 
+    (3, 3) for first 2 Conv2D layers,
+    (5, 5) for the last Conv2D layers
+- Stride: Not explicitly mentioned, defaults to (1, 1) for all Conv2D layers
+- Padding: 
+    'same' for all Conv2D layers
+- Pooling size: (2, 2) for all MaxPooling2D layers
+- Activation Functions: 
+    'elu' for Dense and Conv2D layers, 
+    'softmax' for the final Dense layer
+- Learning Rate: Defaults to the learning rate of 'adam' optimizer (0.001)
+- Batch Size: 4
+- Number of Epochs: 15
+- Dropout Rate: Not used in this model
+- Preprocessing: 
+    - rescale=1./255,
+Validation Accuracy: 0.9575971731448764
+Test Accuracy: 0.9943181818181818
+
+9th iteration:
+- Target size: (64, 64)
+- Number of layers: 8
+    (3 Convolutional layers, 3 Pooling layers, 1 Flatten layer, 1 Dense layer)
+- Number of filters: 
+    32 (first Conv2D layer), 
+    64 (second Conv2D layer), 
+    128 (third Conv2D layer)
+- Filter size: 
+    (3, 3) for first Conv2D layers,
+    (5, 5) for the last 2 Conv2D layers
+- Stride: Not explicitly mentioned, defaults to (1, 1) for all Conv2D layers
+- Padding: 
+    'same' for all Conv2D layers
+- Pooling size: (2, 2) for all MaxPooling2D layers
+- Activation Functions: 
+    'relu' for Dense and Conv2D layers,  
+    'softmax' for the final Dense layer
+- Learning Rate: Defaults to the learning rate of 'adam' optimizer (0.001)
+- Batch Size: 4
+- Number of Epochs: 12 
+- Dropout Rate: Not used in this model
+- Preprocessing: 
+    - rescale=1./255,
+Validation Accuracy: 0.9717314487632509
+Test Accuracy: 0.9943181818181818
+
+10th iteration:
+- Target size: (640, 360)
+- Number of layers: 8
+    (3 Convolutional layers, 3 Pooling layers, 1 Flatten layer, 1 Dense layer)
+- Number of filters: 
+    32 (first Conv2D layer), 
+    64 (second Conv2D layer), 
+    128 (third Conv2D layer)
+- Filter size: 
+    (5, 5) for first Conv2D layers,
+    (10, 10) for the last 2 Conv2D layers
+- Stride: Not explicitly mentioned, defaults to (1, 1) for all Conv2D layers
+- Padding: 
+    'same' for all Conv2D layers
+- Pooling size: (2, 2) for all MaxPooling2D layers
+- Activation Functions: 
+    'relu' for Dense and Conv2D layers,  
+    'softmax' for the final Dense layer
+- Learning Rate: Defaults to the learning rate of 'adam' optimizer (0.001)
+- Batch Size: 4
+- Number of Epochs: 12 
+- Dropout Rate: Not used in this model
+- Preprocessing: 
+    - rescale=1./255,
+Validation Accuracy: 0.9929328560829163
+Test Accuracy: 0.9943181818181818
